@@ -1,0 +1,15 @@
+.typesList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typeItem {
+  flex-grow: 1;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

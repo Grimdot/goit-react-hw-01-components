@@ -1,16 +1,13 @@
+import ProfileCard from './Profile/ProfileCard/ProfileCard';
+import StatsCard from './Stats/StatsCard/StatsCard';
+import userInfo from '../data/user.json';
+import statsData from '../data/data.json';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      React homework template
+    <div>
+      <ProfileCard userInfo={userInfo} />
+      <StatsCard statsData={statsData} title="Some title" />
     </div>
   );
 };

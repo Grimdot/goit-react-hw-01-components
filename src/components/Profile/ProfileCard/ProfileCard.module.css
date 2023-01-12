@@ -1,0 +1,10 @@
+.profileCard {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+}
