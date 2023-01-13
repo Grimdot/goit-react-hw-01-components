@@ -1,10 +1,4 @@
-.typesList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.typeItem {
+.statsItem {
   flex-grow: 1;
   width: 100%;
   height: 60px;
