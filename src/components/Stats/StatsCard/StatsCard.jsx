@@ -1,6 +1,7 @@
 import css from './StatsCard.module.css';
 import StatsTitle from '../StatsTitle/StatsTitle';
 import StatsTypes from '../StatsTypes/StatsTypes';
+import PropTypes from 'prop-types';
 
 const StatsCard = ({ statsData, title }) => {
   return (
@@ -12,3 +13,8 @@ const StatsCard = ({ statsData, title }) => {
 };
 
 export default StatsCard;
+
+StatsCard.propTypes = {
+  statsData: PropTypes.arrayOf(PropTypes.shape({})),
+  title: PropTypes.string,
+};

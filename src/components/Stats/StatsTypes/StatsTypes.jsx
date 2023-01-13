@@ -1,5 +1,6 @@
 import css from './StatsTypes.module.css';
 import makeRandomColor from 'utils/makeRandomColor';
+import PropTypes from 'prop-types';
 
 const StatsTypes = ({ stats }) => {
   return (
@@ -23,3 +24,13 @@ const StatsTypes = ({ stats }) => {
 };
 
 export default StatsTypes;
+
+StatsTypes.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
+};

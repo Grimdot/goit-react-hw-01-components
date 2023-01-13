@@ -1,9 +1,17 @@
 import css from './ProfileCard.module.css';
 import ProfileInfo from '../ProfileInfo/ProfileInfo';
 import ProfileStats from '../ProfileStats/ProfileStats';
+import PropTypes from 'prop-types';
 
-const ProfileCard = ({ userInfo }) => {
-  const { username, tag, location, avatar, stats } = userInfo;
+const ProfileCard = ({
+  userInfo: {
+    username,
+    tag,
+    location,
+    avatar,
+    stats: { likes, views, followers },
+  },
+}) => {
   return (
     <div className={css.profileCard}>
       <ProfileInfo
@@ -12,13 +20,23 @@ const ProfileCard = ({ userInfo }) => {
         username={username}
         location={location}
       />
-      <ProfileStats
-        likes={stats.likes}
-        views={stats.views}
-        followers={stats.followers}
-      />
+      <ProfileStats likes={likes} views={views} followers={followers} />
     </div>
   );
 };
 
 export default ProfileCard;
+
+ProfileCard.propTypes = {
+  userInfo: PropTypes.shape({
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    avatar: PropTypes.string,
+    stats: PropTypes.shape({
+      likes: PropTypes.number,
+      views: PropTypes.number,
+      followers: PropTypes.number,
+    }),
+  }),
+};
