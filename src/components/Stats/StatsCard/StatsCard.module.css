@@ -3,8 +3,7 @@
   margin-right: auto;
   margin-top: 40px;
   background-color: #ffffff;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-radius: 6px;
   width: 300px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;

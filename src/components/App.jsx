@@ -11,7 +11,13 @@ import TransactionsTable from './Transactions/TransactionsTable/TransactionsTabl
 export const App = () => {
   return (
     <div>
-      <ProfileCard userInfo={userInfo} />
+      <ProfileCard
+        username={userInfo.username}
+        tag={userInfo.tag}
+        location={userInfo.location}
+        avatar={userInfo.avatar}
+        stats={userInfo.stats}
+      />
       <StatsCard statsData={statsData} title="Some title" />
       <FriendListCard friends={friendsInfo} />
       <TransactionsTable transactions={transactionsData} />
