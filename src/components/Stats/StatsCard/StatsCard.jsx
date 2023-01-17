@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 const StatsCard = ({ statsData, title }) => {
   return (
     <section className={css.statsCard}>
-      {title ? <h2 className={css.title}>{title}</h2> : <></>}
-
       <StatsList stats={statsData} title={title} />
     </section>
   );

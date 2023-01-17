@@ -8,10 +8,3 @@
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-
-.title {
-  text-align: center;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 20px;
-}
